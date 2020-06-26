@@ -2621,7 +2621,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			/*margin: 2.5rem 0;*/
+			margin: 2.5rem 0 0 0;
 			width: 100%;
 		}
 
@@ -2650,7 +2651,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
-				margin: 2rem 0;
+				/*margin: 2rem 0;*/
+				margin: 2rem 0 0 0;
 			}
 
 			.image.main {
@@ -4695,3 +4697,10 @@ input, select, textarea {
 		}
 
 	}
+
+
+/*Extra css*/
+
+.imgs-attribution{
+	font-size: 10px !important;
+}
