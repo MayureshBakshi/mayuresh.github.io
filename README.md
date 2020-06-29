@@ -1,4 +1,6 @@
-### Default Jekyll Themes setup replaced by custom HTLM template from html5up
+### Default Jekyll Themes setup replaced by custom HTLM5 template from https://html5up.net/  
+
+Current theme: Massively
 
 <!-- ## Welcome to GitHub Pages
 
