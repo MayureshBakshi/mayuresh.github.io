@@ -1,0 +1,93 @@
+/* ENQUIRY SLIDER*/
+
+
+#slider{
+  z-index: 999999 !important;
+	width:500px;
+	top:100px;
+	position:fixed;
+}
+
+#header{
+  background: #fff;
+	width:341px;
+	height:520px;
+	position:absolute;
+	right:0px;
+	border:1px solid #d8d8d8;
+	margin-left:40px;
+	padding:20px 40px;
+	border-radius:3px;
+	box-shadow: 0 0 8px gray;
+}
+#header h2{
+  font-size: 24px;
+  font-family: tpb !important;
+}
+
+#sidebar{
+	position:absolute;
+	/*top:180px;*/
+	left:113px;
+	/*box-shadow: 0 0 8px gray;*/
+}
+#sidebar img{
+  height: 180px;
+}
+
+#sidebar1{
+	position:absolute;
+	/*top:180px;*/
+	left:113px;
+	/*box-shadow: 0 0 8px gray;*/
+}
+#sidebar1 img{
+  height: 180px;
+}
+
+.form-control{
+  margin-bottom: 10px;
+}
+
+
+
+
+/*----------------------------------*/
+div#enq {
+  display: none;
+  position: fixed;
+  top: 25px;
+  right: 0px;
+  margin: 0px;
+  padding: 15px  10px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 0 8px grey;
+  list-style: none;
+  z-index:9999999;
+  width: 250px;
+  border-radius:5px 0px 0px 5px;
+}
+div#enq .enq-btn{
+  background:none;
+  border-radius:10px 0px 0px 10px;
+   position:absolute;
+   top:110px;
+   left:-58px;
+   width:60px;
+    height:170px;
+    display:block;
+    cursor:pointer;}
+div#enq .enq-btn img{z-index: 99999999;}
+#enq h3{
+  font-family: tpb !important;
+}
+#submit-button,#submit-button-1{
+  text-transform: uppercase;
+    color: #fff;
+    background-color: #459DB0;
+}
+
+.swal2-container{
+  z-index: 99999999 !important;
+}

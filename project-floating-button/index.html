@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enquiry Button</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!-- Sliding div starts here -->
+
+  <div id="enq">
+      <div class="enq-btn"><img src="contact.png" alt="open" class="img-responsive" /></div>
+      <div class="col-md-12">
+        <div class="col-md-12 no-pad">
+          <h3>Enquiry Form</h3>
+        </div>
+        <form name="sentMessage" id="contactForm" >
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" id="name-1" class="form-control name" placeholder="Name" required >
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="email" id="email-1" class="email form-control" placeholder="Email" required>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="number" id="mobno-1"  class="mobno form-control" placeholder="Mobile Number" min="10" required>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" id="city-1" class="city form-control" placeholder="City" required>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message-1" class=" message form-control" rows="4" placeholder="Message"  required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <div class="col-md-12">
+            <button type="button" id="submit-button-1" class="btn btn-custom col-md-12">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+<script type="text/javascript">
+  $( document ).ready(function() {
+
+  $(function() {
+    $('#enq').stop().animate({'margin-right':'-250px'},0);
+    $("#enq").css("display", "block");
+  function toggleDivs() {
+      var $inner = $("#enq");
+      if ($inner.css("margin-right") == "-250px") {
+          $inner.animate({'margin-right': '0'});
+      $(".enq-btn").html('<img src="contact.png" alt="open" class="img-responsive" />')
+      }
+      else {
+          $inner.animate({'margin-right': "-250px"});
+      $(".enq-btn").html('<img src="contact.png" alt="close" class="img-responsive"/>')
+      }
+  }
+  $(".enq-btn").bind("click", function(){
+      toggleDivs();
+  });
+  });
+  });
+</script>
+</body>
+</html>
+
+
+
